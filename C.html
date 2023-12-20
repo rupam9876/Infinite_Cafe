@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+.container{
+    background:linear-gradient(45deg, rgba(52, 182, 238, 0.694), rgb(230, 241, 230));
+    padding:15px 9%;
+    padding-bottom: 100px;
+}
+
+.container .heading{
+    text-align: center;
+    padding-bottom: 15px;
+    color:#fff;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
+}
+
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:15px;
+}
+
+.container .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding:30px 20px;
+}
+.container .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 260px;
+  padding: 20px 1px;
+  margin: 10px 0;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
+  border-radius: 10px;
+  background-color: #6B6ECC;
+  background: linear-gradient(45deg, #04051dea 0%, #2b566e 100%);
+}
+
+.content {
+  padding: 20px;
+}
+.img img{
+  height: 150px;
+  width:250px;
+}
+.content .price {
+  color: rgb(15, 2, 2);
+  font-weight: 800;
+  font-size: 50px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
+}
+
+.content .description {
+  color: rgba(26, 25, 25, 0.89);
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.content .title {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: rgba(7, 7, 7, 0.64);
+  margin-top: 10px;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+button {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: none;
+  outline: none;
+  color: rgb(26, 4, 4);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .75rem;
+  padding: 0.75rem 1.5rem;
+  background-color: rgb(33 150 243);
+  border-radius: 0.5rem;
+  width: 90%;
+  text-shadow: 0px 4px 18px #2c3442;
+}
+
+button:hover{
+  background-color: #00bfff96;
+  transform: scale(0.90s);
+}
+
+@media (max-width:768px){
+    .container{
+        padding:20px;
+    }
+}
+    </style>
+
+</head>
+<body>
+    
+<div class="container">
+
+    <h1 class="heading">our Menu</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="content">
+              <div class="img"><img src="C1.jpg" alt=""></div>
+              <div class="title">Crispy Chicken</div>
+              <div class="price">₹198</div>
+              <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at posuere eros. Interdum et malesuada fames ac ante ipsum primis in faucibus.</div>
+            </div>
+              <button>
+                Buy now
+              </button>
+        </div>
+
+        <div class="box">
+            <div class="content">
+              <div class="img"><img src="C2.jpg" alt=""></div>
+              <div class="title">Drums Of Heven [6 Pieces]</div>
+              <div class="price">₹348</div>
+              <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at posuere eros. Interdum et malesuada fames ac ante ipsum primis in faucibus.</div>
+            </div>
+              <button>
+                Buy now
+              </button>
+        </div>
+
+        <div class="box">
+            <div class="content">
+              <div class="img"><img src="C3.jpg" alt=""></div>
+              <div class="title">Chicken Tangri Butter Masala</div>
+              <div class="price">₹299</div>
+              <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at posuere eros. Interdum et malesuada fames ac ante ipsum primis in faucibus.</div>
+            </div>
+              <button>
+                Buy now
+              </button>
+        </div>
+
+        <div class="box">
+            <div class="content">
+              <div class="img"><img src="C4.jpg" alt=""></div>
+              <div class="title">Chicken Tandoori Kebab</div>
+              <div class="price">₹294</div>
+              <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at posuere eros. Interdum et malesuada fames ac ante ipsum primis in faucibus.</div>
+            </div>
+              <button>
+                Buy now
+              </button>
+        </div>
+
+        <div class="box">
+            <div class="content">
+              <div class="img"><img src="C5.jpg" alt=""></div>
+              <div class="title">Chicken Tangri Kebab</div>
+              <div class="price">₹314</div>
+              <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at posuere eros. Interdum et malesuada fames ac ante ipsum primis in faucibus.</div>
+            </div>
+              <button>
+                Buy now
+              </button>
+        </div>
+
+        <div class="box">
+            <div class="content">
+              <div class="img"><img src="C6.jpg" alt=""></div>
+              <div class="title">Chicken Resshmi Kebab</div>
+              <div class="price">₹378</div>
+              <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at posuere eros. Interdum et malesuada fames ac ante ipsum primis in faucibus.</div>
+            </div>
+              <button>
+                Buy now
+              </button>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
